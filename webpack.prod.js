@@ -55,15 +55,8 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      inject: false,
-      template: require("html-webpack-template"),
-      title: "Document",
-      mobile: true,
-      lang: "en-US",
-      appMountId: "root",
-      minify: {
-        collapseWhitespace: true,
-      },
+      filename: "index.html",
+      template: "./src/index.html"
     }),
     new MiniCssExtractPlugin({
       filename: "[name]-[hash].css"
