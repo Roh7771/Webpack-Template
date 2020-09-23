@@ -5,7 +5,9 @@
   "private": true,
   "scripts": {
     "build": "webpack --config webpack.prod.js",
-    "start": "webpack-dev-server --open --config webpack.dev.js"
+    "start": "webpack-dev-server --open --config webpack.dev.js",
+    "eslint": "eslint --ext .js --fix src/",
+    "check": "npm run eslint"
   },
   "keywords": [],
   "author": "",
